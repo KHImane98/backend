@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c9ead7fcd8e4f0890a511d2cec6618b" Name="Diagram1">
+        <EntityTypeShape EntityType="SysRecomProjectModel.Categorie" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysRecomProjectModel.Personne_metier" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysRecomProjectModel.Recommandation" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysRecomProjectModel.Role" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysRecomProjectModel.Service" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysRecomProjectModel.User" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__Personne___Categ__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__Service__Categor__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__Recommand__Perso__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__Recommand__Servi__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__Recommand__UserI__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="SysRecomProjectModel.FK__User__RoleId__29572725" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
