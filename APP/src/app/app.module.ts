@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,24 +9,33 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './user/home/home.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
-import { LoginRegisterComponent } from './login-register/login-register.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
+import { NavbarComponent } from './user/navbar/navbar.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { RecommandationComponent } from './recommandation/recommandation.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule} from '@angular/forms';
-import { CategoriesComponent } from './categories/categories.component';
-import { FooterComponent } from './footer/footer.component';
-import { ServiceComponent } from './service/service.component';
+import { CategoriesComponent } from './user/categories/categories.component';
+import { FooterComponent } from './user/footer/footer.component';
+import { ServiceComponent } from './user/service/service.component';
 import {MatStepperModule} from '@angular/material/stepper';
-import { PersonneComponent } from './personne/personne.component';
-import { AllrecommandationComponent } from './allrecommandation/allrecommandation.component';
-
+import { PersonneComponent } from './user/personne/personne.component';
+import { AllrecommandationComponent } from './user/allrecommandation/allrecommandation.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { SearchBarComponent } from './user/search-bar/search-bar.component';
+import { LoginComponent } from './admin/login/login.component';
+import { RecommandationComponent } from './admin/recommandation/recommandation.component';
+import { CategoriesadminComponent } from './admin/categoriesadmin/categoriesadmin.component';
+import { NavbaradminComponent } from './admin/navbaradmin/navbaradmin.component';
+import { ServiceadminComponent } from './admin/serviceadmin/serviceadmin.component';
+import { PersonneadminComponent } from './admin/personneadmin/personneadmin.component';
+import { RecommandationadminComponent } from './admin/recommandationadmin/recommandationadmin.component';
 
 
 
@@ -35,14 +43,20 @@ import { AllrecommandationComponent } from './allrecommandation/allrecommandatio
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginRegisterComponent,
     NavbarComponent,
-    RecommandationComponent,
     CategoriesComponent,
     FooterComponent,
     ServiceComponent,
     PersonneComponent,
-    AllrecommandationComponent    
+    AllrecommandationComponent,
+    SearchBarComponent,
+    LoginComponent,
+    RecommandationComponent,
+    CategoriesadminComponent,
+    NavbaradminComponent,
+    ServiceadminComponent,
+    PersonneadminComponent,
+    RecommandationadminComponent    
   ],
   imports: [
     BrowserModule,
@@ -60,7 +74,11 @@ import { AllrecommandationComponent } from './allrecommandation/allrecommandatio
     MatGridListModule,
     HttpClientModule,
     FormsModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDividerModule,
+    MatIconModule,
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

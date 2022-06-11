@@ -1,0 +1,22 @@
+.main-div
+{
+     background-position: center;
+     background-size: cover;
+}
+.card
+{
+background : white;
+border: 2px solid black;
+border-radius: 10px;
+}
+.main-img
+{
+padding: auto;
+width: 90%;
+display: block;
+margin: 10px auto 10px auto;
+border: 2px solid black;
+}
+.title {
+     margin: 10px 15px;
+}

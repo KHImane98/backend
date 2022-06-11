@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './user/home/home.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
-import { RecommandationComponent } from './recommandation/recommandation.component';
-import { CategoriesComponent } from './categories/categories.component';
-import { ServiceComponent } from './service/service.component';
-import { PersonneComponent } from './personne/personne.component';
-import { AllrecommandationComponent } from './allrecommandation/allrecommandation.component';
+import { CategoriesComponent } from './user/categories/categories.component';
+import { ServiceComponent } from './user/service/service.component';
+import { PersonneComponent } from './user/personne/personne.component';
+import { AllrecommandationComponent } from './user/allrecommandation/allrecommandation.component';
+import { LoginComponent } from './admin/login/login.component';
+import { CategoriesadminComponent } from './admin/categoriesadmin/categoriesadmin.component';
+import { PersonneadminComponent } from './admin/personneadmin/personneadmin.component';
+import { ServiceadminComponent } from './admin/serviceadmin/serviceadmin.component';
+import { RecommandationadminComponent } from './admin/recommandationadmin/recommandationadmin.component';
 
 const routes: Routes = [
   {
@@ -20,9 +24,6 @@ const routes: Routes = [
     path: 'personne', component: PersonneComponent
   },
   {
-    path: 'recommandations', component: RecommandationComponent
-  },
-  {
     path: 'cat', component: CategoriesComponent
   },
   {
@@ -30,6 +31,21 @@ const routes: Routes = [
   },
   {
     path: 'AllRecommandation', component: AllrecommandationComponent
+  },
+  {
+    path: 'login', component: LoginComponent
+  },
+  {
+    path: 'add-cat', component:CategoriesadminComponent
+  },
+  {
+    path: 'add-personne', component:PersonneadminComponent
+  },
+  {
+    path: 'add-service', component:ServiceadminComponent
+  },
+  {
+    path: 'app-rec', component: RecommandationadminComponent
   }
 ];
 @NgModule({

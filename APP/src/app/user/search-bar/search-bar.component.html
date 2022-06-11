@@ -1,0 +1,23 @@
+<div fxLayoutAlign="center center" fxLayoutGap class="main-div">
+    <mat-card fxFlex="40" class="card">
+      <mat-grid-list cols="2" rowHeight="80px">
+        <mat-grid-tile>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger wrn-btn">Search</button>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field appearance="fill">
+              <mat-label>filter by </mat-label>
+              <select matNativeControl required>
+              <option value="volvo">Services</option>
+              <option value="volvo">personne de métiers</option>
+            </select>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  </div>
