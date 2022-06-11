@@ -17,13 +17,16 @@ import { LoginRegisterComponent } from './login-register/login-register.componen
 import { NavbarComponent } from './home/navbar/navbar.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { ServicePersonnemetierComponent } from './service-personnemetier/service-personnemetier.component';
 import { RecommandationComponent } from './recommandation/recommandation.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule} from '@angular/forms';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServiceComponent } from './service/service.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { PersonneComponent } from './personne/personne.component';
+import { AllrecommandationComponent } from './allrecommandation/allrecommandation.component';
 
 
 
@@ -34,10 +37,12 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     LoginRegisterComponent,
     NavbarComponent,
-    ServicePersonnemetierComponent,
     RecommandationComponent,
     CategoriesComponent,
-    FooterComponent
+    FooterComponent,
+    ServiceComponent,
+    PersonneComponent,
+    AllrecommandationComponent    
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSelectModule,
     MatGridListModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
