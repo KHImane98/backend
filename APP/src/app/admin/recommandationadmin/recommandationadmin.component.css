@@ -1,0 +1,47 @@
+md-card {
+    padding: 0 0 0 0;
+  
+  }
+  
+  md-list-item {
+      min-height: 70px !important;
+  
+  }
+  
+  ::ng-deep .mat-list .mat-list-item .mat-list-item-content, .mat-nav-list .mat-list-item .mat-list-item-content {
+      width: 99vw;
+  }
+  
+  .nav-button{
+    cursor: pointer;
+  }
+  
+  .big-box{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .span div-icon{
+    float: right;
+  }
+  .div-text {
+    margin-left: 10px;
+    text-decoration-line:underline;
+  }
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+.accordion  {
+  margin: 10px 10px 10px 10px;
+  background-image: linear-gradient(315deg, #3bc4a1 0%, #279b7e 74%);
+}  
+.accordion mat-panel-title{
+  text-decoration-line: underline;
+  font-size:large;
+}
+.main-div {
+  margin: 15px auto 15px auto;
+}
+.non-app{
+  margin-top: 20px;
+  margin-left: 20px;
+}

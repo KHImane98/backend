@@ -1,19 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CategoriesadminComponent } from './categoriesadmin.component';
 
-describe('CategoriesadminComponent', () => {
-  let component: CategoriesadminComponent;
-  let fixture: ComponentFixture<CategoriesadminComponent>;
+import { UpdateServiceComponent } from './update-service.component';
+
+describe('UpdateServiceComponent', () => {
+  let component: UpdateServiceComponent;
+  let fixture: ComponentFixture<UpdateServiceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CategoriesadminComponent ]
+      declarations: [ UpdateServiceComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CategoriesadminComponent);
+    fixture = TestBed.createComponent(UpdateServiceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

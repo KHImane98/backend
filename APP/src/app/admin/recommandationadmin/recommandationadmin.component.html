@@ -1,1 +1,24 @@
-<p>recommandationadmin works!</p>
+<div class="header">
+    <app-navbaradmin></app-navbaradmin>
+  </div>
+  <div class="non-app">
+    <a href="non-approuver">
+      <button class="btn btn-danger wrn-btn">Non approuver</button>
+    </a>
+  </div>
+<div class="accordion">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Nom de la recommande
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+          <button class="btn btn btn-success wrn-btn"><i class="bi bi-check-lg"></i>Approuver</button>
+          <button class="btn btn-danger wrn-btn ms-2"><i class="bi bi-x"></i>Non approuver</button>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+    </div>  

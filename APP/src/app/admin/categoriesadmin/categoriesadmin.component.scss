@@ -142,12 +142,12 @@ body{
     }
 	.box{
 		position: relative;
-		height: 200px;
+		height: 250px;
 		box-shadow: 3px 3px 10px rgba($color: #555, $alpha: 0.5);
 		border-radius: 8px;
-    border: 2px solid black;
-		margin-bottom: 7%;
-    transition: 1s;
+        border: 2px solid black;
+	 	//margin-bottom: 7%;
+         transition: 1s;
 		
 		a:hover .box__title{
 			height: 35%;
@@ -234,4 +234,8 @@ body{
 			margin-top: 21.5%;
 		}
 	}
+}
+.button-sec{
+	float: right;
+	margin: auto;
 }

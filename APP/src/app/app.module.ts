@@ -16,7 +16,7 @@ import { NavbarComponent } from './user/navbar/navbar.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule} from '@angular/forms';
 import { CategoriesComponent } from './user/categories/categories.component';
 import { FooterComponent } from './user/footer/footer.component';
@@ -30,12 +30,19 @@ import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SearchBarComponent } from './user/search-bar/search-bar.component';
 import { LoginComponent } from './admin/login/login.component';
-import { RecommandationComponent } from './admin/recommandation/recommandation.component';
 import { CategoriesadminComponent } from './admin/categoriesadmin/categoriesadmin.component';
 import { NavbaradminComponent } from './admin/navbaradmin/navbaradmin.component';
 import { ServiceadminComponent } from './admin/serviceadmin/serviceadmin.component';
 import { PersonneadminComponent } from './admin/personneadmin/personneadmin.component';
 import { RecommandationadminComponent } from './admin/recommandationadmin/recommandationadmin.component';
+import { AddCatComponent } from './admin/categoriesadmin/add-cat/add-cat.component';
+import { AddServiceComponent } from './admin/serviceadmin/add-service/add-service.component';
+import { AddPersonneComponent } from './admin/personneadmin/add-personne/add-personne.component';
+import { UpdatePersonneComponent } from './admin/personneadmin/update-personne/update-personne.component';
+import { UpdateServiceComponent } from './admin/serviceadmin/update-service/update-service.component';
+import { UpdateCatComponent } from './admin/categoriesadmin/update-cat/update-cat.component';
+import { NonapprouverComponent } from './admin/recommandationadmin/nonapprouver/nonapprouver.component';
+
 
 
 
@@ -51,12 +58,19 @@ import { RecommandationadminComponent } from './admin/recommandationadmin/recomm
     AllrecommandationComponent,
     SearchBarComponent,
     LoginComponent,
-    RecommandationComponent,
     CategoriesadminComponent,
     NavbaradminComponent,
     ServiceadminComponent,
     PersonneadminComponent,
-    RecommandationadminComponent    
+    RecommandationadminComponent,
+    AddCatComponent,
+    AddServiceComponent,
+    AddPersonneComponent,
+    UpdatePersonneComponent,
+    UpdateServiceComponent,
+    UpdateCatComponent,
+    NonapprouverComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -78,7 +92,8 @@ import { RecommandationadminComponent } from './admin/recommandationadmin/recomm
     MatDividerModule,
     MatIconModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
